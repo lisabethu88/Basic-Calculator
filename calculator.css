@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+body
+{
+    width:100%; 
+    height:100%; 
+    background:#fff url(https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) center center no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+
+#container{
+    width:25vw;
+    height:90vh;
+    background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(238,238,239,1) 55%, rgba(163,164,166,1) 100%);
+    border-radius: 52px 52px 52px 52px;
+    box-shadow: 10px 10px 22px -11px rgba(0,0,0,0.75);
+    display:inline-block;
+    min-width: 300px;
+    min-height:500px
+}
+
+#btnContainer button{
+    width:70%;
+    height:70%;
+    background: radial-gradient(circle, rgba(255,255,255,1) 45%, rgba(238,238,239,1) 55%, rgba(163,164,166,1) 100%);
+    color:black;
+    font-size:1.5em;
+    text-align: center; 
+    border-radius: 60px 60px 60px 60px;
+    font-family:arial;
+    outline:none;
+    box-shadow: inset 10px 10px 61px -21px rgba(0,0,0,0.56);
+}
+
+#logo{
+    margin-top:5px;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#resultBox{
+    text-align:right;
+    width:80%;
+    height:10%;
+    margin-top:10px;
+    border-radius: 23px 23px 23px 23px;
+    background-color: rgb(191, 206, 224);
+    border:4px solid gray;
+    font-size:2rem;
+    color:rgb(37, 37, 37);
+    font-family: 'Orbitron', sans-serif;
+}
+
+#btnContainer
+{
+    width:80%;
+    height:75%;
+    margin-top:1em;
+    display:grid;
+    grid-template-columns: 4rem 4rem 4rem 4rem;
+    gap: 0 0;
+    justify-content: center;
+}
+
+#backBtn{
+    font-size:1.25em !important;
+}
+
+/*All toolTip code is from w3schools*/
+.toolTip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .toolTip .toolTipText {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    font-size:1rem;
+  }
+  
+  .toolTip:hover .toolTipText {
+    visibility: visible;
+  }
